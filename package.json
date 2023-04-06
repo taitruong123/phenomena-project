@@ -18,8 +18,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
     "@emotion/react": "^11.10.6",
     "axios": "^0.20.0",
+    "babel-loader": "^9.1.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

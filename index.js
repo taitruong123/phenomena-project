@@ -2,6 +2,7 @@
 require('dotenv').config()
 const path = require('path');
 
+
 // Import express, and create a server
 const express = require('express');
 const app = express();
@@ -27,7 +28,7 @@ app.use('/dist', express.static(path.join(__dirname, 'dist')))
 app.get('/', (req, res) => res.sendFile(path.json(__dirname, 'index.html')));
 // Have the server use your api router with prefix '/api'
 
-const { apiRouter } = require('./api/index.js');
+const apiRouter  = require('./api/index.js');
 app.use('/api', apiRouter)
 
 // Import the client from your db/index.js
